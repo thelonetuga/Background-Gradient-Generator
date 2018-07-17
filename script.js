@@ -17,9 +17,10 @@ function changeGradient() {
 function changeGradientRandom() {
    var colorValue1 = generateColors();
    var colorValue2 = generateColors();
-   console.log(colorValue1);
-    body.style.background = "linear-gradient(to right, " + colorValue1 + ", "  + colorValue2 + ")";
-    css.textContent = body.style.background + ";";
+   color1.setAttribute("value", colorValue1);
+   color2.setAttribute("value", colorValue2);
+   body.style.background = "linear-gradient(to right, " + colorValue1 + ", "  + colorValue2 + ")";
+   css.textContent = body.style.background + ";";
 }
 
 
